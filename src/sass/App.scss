@@ -1,6 +1,73 @@
+@use './variables' as v;
+
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
 .btn__container {
-    border: solid 3px blue;
     width: 350px;
     display: flex;
     justify-content: space-between;
+}
+
+.card__container {
+    display: flex;
+    width: 600px;
+    height: 400px;
+
+    margin: 20px auto;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+
+    .card:nth-child(1) {
+        position: absolute;
+        left: 0px;
+        z-index: 3;
+
+        transform: rotate(-15deg) translateY(20px);
+        transition: .3s;
+
+        &:hover {
+            transform: rotate(-15deg) translateY(0);
+        }
+    }
+
+    .card:nth-child(2) {
+        position: absolute;
+        left: 175px;
+        z-index: 2;
+
+        transition: .3s;
+
+        &:hover {
+            transform: translateY(-10px);
+        }
+    }
+
+    .card:nth-child(3) {
+        position: absolute;
+        left: 350px;
+        z-index: 1;
+
+        transform: rotate(15deg) translateY(30px);
+        transition: .3s;
+
+        &:hover {
+            transform: rotate(15deg) translateY(0);
+        }
+    }
+    
+}
+.card1{
+    transform: rotate(15deg) translate(200px);
+}
+.card2{
+    transform: rotate(10deg) translate(150px);
 }

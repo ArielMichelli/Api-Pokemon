@@ -15,6 +15,9 @@
 
         color: white;
         font-size: 30px;
+        &:active{
+            transform: translateY(4px);
+        }
     }
     .box__shadow{
         width: 60px;
