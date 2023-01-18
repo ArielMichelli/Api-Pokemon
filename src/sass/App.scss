@@ -1,24 +1,26 @@
 @use './variables' as v;
 
 .app {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+
 }
 
 .btn__container {
-    width: 350px;
+    width: 550px;
     display: flex;
     justify-content: space-between;
+    margin: 15px auto;
+    align-self: center;
 }
 
 .card__container {
     display: flex;
     width: 600px;
     height: 400px;
-
-    margin: 20px auto;
+    margin: 30px;
     padding: 20px;
     align-items: center;
     justify-content: center;
@@ -28,7 +30,7 @@
 
     .card:nth-child(1) {
         position: absolute;
-        left: 0px;
+        left: 10px;
         z-index: 3;
 
         transform: rotate(-15deg) translateY(20px);
@@ -63,11 +65,13 @@
             transform: rotate(15deg) translateY(0);
         }
     }
-    
+
 }
-.card1{
+
+.card1 {
     transform: rotate(15deg) translate(200px);
 }
-.card2{
-    transform: rotate(10deg) translate(150px);
+
+.card2 {
+    transform: rotate(10deg) translate(130px);
 }
